@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.passtxt = New System.Windows.Forms.TextBox()
         Me.emailtxt = New System.Windows.Forms.TextBox()
@@ -206,9 +207,10 @@ Partial Class Form1
         Me.Controls.Add(Me.btn_login)
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "SoapBox Race World"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
